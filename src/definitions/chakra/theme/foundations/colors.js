@@ -10,4 +10,8 @@ export default {
   main: {
     100: "#282c34",
   },
+  action: {
+    hover: "#608bd1",
+    normal: "#0757d9",
+  },
 };

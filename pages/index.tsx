@@ -1,17 +1,27 @@
 import React from "react";
-import { Spacer, Flex } from "@chakra-ui/react";
-
-import { Header, Main, Cards, Footer } from "@components";
+import {
+  Button,
+  Center,
+  Flex,
+  Text,
+  useColorMode,
+  VStack,
+} from "@chakra-ui/react";
+import SuperModal from "@components/Modals/SuperModal";
 
 const Home: React.FC = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
+  const handleToggleTheme = () => {
+    toggleColorMode();
+  };
+
   return (
-    <Flex direction="column" minH="100vh">
-      <Header />
-      <Main />
-      <Cards />
-      <Spacer />
-      <Footer />
-    </Flex>
+    <Center w="full" h="full">
+      <Text fontSize={50} fontWeight="bold">
+        MON SUPER TITRE
+      </Text>
+    </Center>
   );
 };
 

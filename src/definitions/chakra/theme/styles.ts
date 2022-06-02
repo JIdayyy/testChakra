@@ -7,10 +7,16 @@ export default {
     global: {
       h1: {
         fontWeight: 500,
-        marginBottom: "0.5em",
       },
-      p: {
-        marginBottom: "1em",
+    },
+  },
+  textStyles: {
+    link: {
+      color: "white",
+      fontSize: "18px",
+      cursor: "pointer",
+      _hover: {
+        textDecoration: "underline",
       },
     },
   },

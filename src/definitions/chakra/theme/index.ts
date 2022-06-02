@@ -5,6 +5,7 @@ import styles from "./styles";
 import colors from "./foundations/colors";
 
 import fontSizes from "./foundations/fontSizes";
+import componentsExtents from "./components/index";
 
 /**
  * This file is generated for providing a custom theme to Chakra UI
@@ -17,8 +18,9 @@ const overrides = {
   ...styles,
   colors,
   fontSizes,
+  ...componentsExtents,
 };
 
-const theme = extendTheme(overrides);
+export const theme = extendTheme(overrides);
 
 export default theme;

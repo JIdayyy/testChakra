@@ -6,6 +6,8 @@ class CustomDocument extends Document {
   ): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx);
 
+    console.log(initialProps);
+
     return initialProps;
   }
 }
